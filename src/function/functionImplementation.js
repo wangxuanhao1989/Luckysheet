@@ -23641,7 +23641,7 @@ const functionImplementation = {
             var error_val;
 
             if(getObjType(data_error_val) == "object" && data_error_val.startCell != null){
-                if(data_error_val.data == null){
+                if(data_error_val.data == null || Object.keys(data_error_val.data).length == 0 ){
                     return true;
                 }
                 else{
